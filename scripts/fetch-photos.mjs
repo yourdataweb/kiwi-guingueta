@@ -2,21 +2,21 @@
 /**
  * Resolve Google Places photo resource names into local images.
  *
- * The Places API (New) returns photo *names* (places/<id>/photos/<ref>), not URLs.
- * They must be fetched through the media endpoint with an API key:
+ * The Places API (New) returns photo *names* (places/<id>/photos/<ref>), never
+ * URLs. They must be fetched through the media endpoint with an API key:
  *
  *   GET https://places.googleapis.com/v1/{photo.name}/media?maxWidthPx=1600&key=KEY
  *
- * That redirects to the actual image bytes. This script follows the redirect,
- * downloads each photo into assets/photos/, and rewrites assets/data/place.json
- * with local paths so the site has no runtime dependency on the key.
+ * which redirects to the image bytes. This script follows the redirect,
+ * downloads each photo into assets/photos/, and records the local paths in
+ * src/place.json so the build can use them.
  *
  * Usage:
  *   GOOGLE_MAPS_API_KEY=AIza... node scripts/fetch-photos.mjs
- *   GOOGLE_MAPS_API_KEY=... node scripts/fetch-photos.mjs --max 8 --width 1600
+ *   GOOGLE_MAPS_API_KEY=... node scripts/fetch-photos.mjs --max 6 --width 1600
  *
- * Requires: Places API (New) enabled on the key's project. Billing applies
- * per photo request — check current pricing before running with a large --max.
+ * Requires the Places API (New) on the key's project. Billing applies per
+ * photo request — check current pricing before a large --max.
  */
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
@@ -25,7 +25,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
-const DATA = join(ROOT, 'assets', 'data', 'place.json');
+const DATA = join(ROOT, 'src', 'place.json');
 const OUT = join(ROOT, 'assets', 'photos');
 
 const argv = process.argv.slice(2);
@@ -39,13 +39,18 @@ const MAX = Number(flag('max', 8));
 const WIDTH = Number(flag('width', 1600));
 
 if (!API_KEY) {
-  console.error('Missing GOOGLE_MAPS_API_KEY.\n' +
-    'Create one with the Places API (New) enabled, then re-run:\n' +
-    '  GOOGLE_MAPS_API_KEY=AIza... node scripts/fetch-photos.mjs');
+  console.error(
+    'Missing GOOGLE_MAPS_API_KEY.\n' +
+    'Create a key with the Places API (New) enabled, then re-run:\n' +
+    '  GOOGLE_MAPS_API_KEY=AIza... node scripts/fetch-photos.mjs'
+  );
   process.exit(2);
 }
 
-/** Photo resource names live in the original API dump; recover them from PHOTOS below. */
+/**
+ * Photo resource names from the original Places payload, in payload order.
+ * Kept here rather than in place.json so the JSON stays readable.
+ */
 const PHOTOS = [
   'places/ChIJu0KdsneHoxIRANbP-eXV3YE/photos/AWCwydheuYwWevRk4RhuU2dfSte_AZbZa-Drhfqo7C0WjiiK4Za2H0ngsc4IGV_oNpD5U3l_GrwM8xZ9MvSBnBvjSl-S9B2MnTFwRQ_UQg-BTfKMX92ZZn7O0togRmhEwIcDM-N6umBuqQKGn43quH7pkE5-hzmT4p0mydZ73P1R5C7n9I4My5TAkKCA03UD-4N3P6rRmqd7z_Ucc5Lyvm6dMVoYNJNstyOXw5fDtT2Or0W-6WHUI6UULopvsWYLN6bm350RDAny8fBHWaZj5Slm4CLRCpGVeG2_jNbzVrwTJs1ulsxTsp6gPerRCTMgDZisbBbeug3awl7Tj2egx21291YMrcghBHuZEmnsDX4yn5VmMB7IC0tllb1wNXuQimDoNg3025pAbDo1icvLQ_UwzR_IJhy1G7-VaqeGw5FuPHFWai815zVCHKH9sZUHsA',
   'places/ChIJu0KdsneHoxIRANbP-eXV3YE/photos/AWCwydhXnGqd7eriZk9r1ad0-FbfTmMNGvp8ul4UYFSNK83UuSvgppB6a7BekoacL0qabxlLz5SJ1eg0vdpFpOXHRfwBquHrFOcpmkdOxfY09uC2hKCGa0NF4nA2N2g8bGdob0CNsEt1Eaq78Bn4wPPMNKiLZNaUqNmV5yeVgagcN0lIXNLfgsboENWNyC7X59ltMYowkscH2JlsQXoJ6YAvSrf6zL20rcAWrEQpkPBQ_py1NkI2Ozq7M4NPjDsLdJDhk4q57BwhIvHtpzzQSZOzNGocEn1oTIQX1uOJ_C6NzA6vhO5ljWXTNApBNWI9t6BYoBnxfvuySvbq_epslabrYQpZkcKsp5w7lyUshVmXE2RPIXplAHq566k4JAsGyoMDG2mvFWoQcSBSB5p_AqpZf075hz7f7DZRovInZ5Rk6fjaZ4V3YSofZ_jnGRe-VeSl',
@@ -80,17 +85,16 @@ async function main() {
     }
   }
 
-  if (saved.length) {
-    data.heroPhoto = saved[0];
-    data.galleryPhotos = saved;
-    data.photoNote = `Local photos resolved ${new Date().toISOString().slice(0, 10)}; regenerate with scripts/fetch-photos.mjs.`;
-    await writeFile(DATA, JSON.stringify(data, null, 2) + '\n');
-    console.log(`\nSaved ${saved.length} photo(s) and updated assets/data/place.json.`);
-    console.log('Next: point the hero/about <img> tags at data.heroPhoto (or leave the SVG poster).');
-  } else {
+  if (!saved.length) {
     console.log('\nNo photos saved.');
     process.exitCode = 1;
+    return;
   }
+
+  data.photos = { hero: saved[0], gallery: saved };
+  await writeFile(DATA, JSON.stringify(data, null, 2) + '\n');
+  console.log(`\nSaved ${saved.length} photo(s) and recorded them in src/place.json.`);
+  console.log('Then run: node scripts/build.mjs');
 }
 
 main().catch((err) => {

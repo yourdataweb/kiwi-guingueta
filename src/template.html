@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="{{htmlLang}}" dir="{{dir}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{meta.title}}</title>
+<meta name="description" content="{{meta.description}}">
+<meta name="theme-color" content="#0b3a4a">
+<meta name="format-detection" content="telephone=no">
+
+<link rel="canonical" href="{{url}}">
+<link rel="alternate" hreflang="es" href="{{altEsUrl}}">
+<link rel="alternate" hreflang="en" href="{{altEnUrl}}">
+<link rel="alternate" hreflang="x-default" href="{{altEsUrl}}">
+
+<meta property="og:type" content="business.business">
+<meta property="og:site_name" content="{{place.name}}">
+<meta property="og:title" content="{{meta.ogTitle}}">
+<meta property="og:description" content="{{meta.ogDescription}}">
+<meta property="og:image" content="https://yourdataweb.github.io/kiwi-guingueta/assets/photos/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{a11y.posterAlt}}">
+<meta property="og:url" content="{{url}}">
+<meta property="og:locale" content="{{ogLocale}}">
+<meta property="og:locale:alternate" content="{{ogLocaleAlternate}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{meta.ogTitle}}">
+<meta name="twitter:description" content="{{meta.ogDescription}}">
+<meta name="twitter:image" content="https://yourdataweb.github.io/kiwi-guingueta/assets/photos/og.png">
+
+<link rel="icon" href="{{root}}assets/photos/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{root}}assets/photos/apple-touch-icon.png">
+<link rel="manifest" href="{{root}}manifest.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{root}}assets/css/styles.css">
+
+<script type="application/ld+json">{{{jsonLd}}}</script>
+</head>
+<body>
+
+<a class="skip" href="#main">{{a11y.skip}}</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{root}}index.html" aria-label="{{a11y.home}}">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="32" height="32" focusable="false">
+          <circle cx="16" cy="16" r="15" fill="#0b3a4a"/>
+          <circle cx="16" cy="16" r="10.5" fill="#8fd18a"/>
+          <circle cx="16" cy="16" r="4" fill="#f4f1e6"/>
+          <g fill="#123f2b">
+            <ellipse cx="16" cy="16" rx=".85" ry="1.4"/>
+            <ellipse cx="16" cy="16" rx=".85" ry="1.4" transform="rotate(45 16 16)"/>
+            <ellipse cx="16" cy="16" rx=".85" ry="1.4" transform="rotate(90 16 16)"/>
+            <ellipse cx="16" cy="16" rx=".85" ry="1.4" transform="rotate(135 16 16)"/>
+          </g>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="brand-name">{{place.name}}</span>
+        <span class="brand-sub">{{brand.sub}}</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="{{a11y.mainNav}}">
+      <a href="#about">{{nav.about}}</a>
+      <a href="#highlights">{{nav.highlights}}</a>
+      <a href="#reviews">{{nav.reviews}}</a>
+      <a href="#visit">{{nav.visit}}</a>
+    </nav>
+
+    <div class="header-tools">
+      <!--SOCIAL-->
+      <!--LANG-->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav"
+              aria-label="{{a11y.openMenu}}" data-label-open="{{a11y.openMenu}}" data-label-close="{{a11y.closeMenu}}">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="{{a11y.mainNav}}">
+      <a href="#about">{{nav.about}}</a>
+      <a href="#highlights">{{nav.highlights}}</a>
+      <a href="#reviews">{{nav.reviews}}</a>
+      <a href="#visit">{{nav.visit}}</a>
+    </nav>
+    <!--SOCIAL_MOBILE-->
+    <!--LANG_MOBILE-->
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-media" aria-hidden="true">
+      <img src="{{root}}assets/photos/poster.svg" alt="" width="1600" height="900" fetchpriority="high" decoding="async">
+      <div class="hero-scrim"></div>
+    </div>
+
+    <div class="wrap hero-inner">
+      <p class="hero-eyebrow">
+        <span class="dot" id="status-dot" aria-hidden="true"></span>
+        <span id="open-status" data-open-template="{{hero.openNow}}" data-closed-template="{{hero.closedOpens}}" data-today-label="{{visit.today}}">{{statusFallback}}</span>
+      </p>
+
+      <h1 id="hero-title">{{{hero.title}}}</h1>
+      <p class="hero-lede">{{hero.lede}}</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#visit">{{hero.ctaPrimary}}</a>
+        <!--WHATSAPP_HERO-->
+      </div>
+
+      <ul class="hero-stats" aria-label="{{a11y.atAGlance}}">
+        <li>
+          <span class="stat-value">{{place.ratingFormatted}}</span>
+          <span class="stat-label">{{hero.statRating}}</span>
+        </li>
+        <!--RATING_COUNT_STAT-->
+        <li>
+          <span class="stat-value">{{place.priceRangeLabel}}</span>
+          <span class="stat-label">{{hero.statPrice}}</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section about" id="about" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <p class="eyebrow">{{about.eyebrow}}</p>
+        <h2 id="about-title">{{{about.title}}}</h2>
+        <p>{{about.p1}}</p>
+        <p>{{about.p2}}</p>
+        <p class="about-note">{{about.note}}</p>
+      </div>
+
+      <div class="about-card">
+        <div class="about-card-media">
+          <img src="{{root}}assets/photos/poster.svg" alt="{{a11y.posterAlt}}" width="800" height="600" loading="lazy" decoding="async">
+        </div>
+        <dl class="about-facts">
+          <div>
+            <dt>{{about.factAddress}}</dt>
+            <dd>{{place.street}}<br>{{place.postalCode}} {{place.locality}}</dd>
+          </div>
+          <div>
+            <dt>{{about.factPhone}}</dt>
+            <dd><a href="tel:{{place.phoneE164}}">{{place.phoneNational}}</a></dd>
+          </div>
+          <div>
+            <dt>{{about.factHours}}</dt>
+            <dd>{{about.hoursValue}}</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="section highlights" id="highlights" aria-labelledby="highlights-title">
+    <div class="wrap">
+      <p class="eyebrow">{{highlights.eyebrow}}</p>
+      <h2 id="highlights-title">{{highlights.title}}</h2>
+
+      <ul class="feature-grid">
+        <li class="feature">
+          <span class="feature-icon" data-icon="umbrella" aria-hidden="true"></span>
+          <h3>{{highlights.f1Title}}</h3><p>{{highlights.f1Text}}</p>
+        </li>
+        <li class="feature">
+          <span class="feature-icon" data-icon="sunbed" aria-hidden="true"></span>
+          <h3>{{highlights.f2Title}}</h3><p>{{highlights.f2Text}}</p>
+        </li>
+        <li class="feature">
+          <span class="feature-icon" data-icon="cocktail" aria-hidden="true"></span>
+          <h3>{{highlights.f3Title}}</h3><p>{{highlights.f3Text}}</p>
+        </li>
+        <li class="feature">
+          <span class="feature-icon" data-icon="music" aria-hidden="true"></span>
+          <h3>{{highlights.f4Title}}</h3><p>{{highlights.f4Text}}</p>
+        </li>
+        <li class="feature">
+          <span class="feature-icon" data-icon="dog" aria-hidden="true"></span>
+          <h3>{{highlights.f5Title}}</h3><p>{{highlights.f5Text}}</p>
+        </li>
+        <li class="feature">
+          <span class="feature-icon" data-icon="group" aria-hidden="true"></span>
+          <h3>{{highlights.f6Title}}</h3><p>{{highlights.f6Text}}</p>
+        </li>
+      </ul>
+
+      <div class="feature-columns"><!--CAPABILITIES--></div>
+    </div>
+  </section>
+
+  <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <div class="reviews-head">
+        <div>
+          <p class="eyebrow">{{reviews.eyebrow}}</p>
+          <h2 id="reviews-title">{{reviews.title}}</h2>
+        </div>
+        <!--RATING_BADGE-->
+      </div>
+
+      <ul class="review-grid" id="review-grid"><!--REVIEWS--></ul>
+
+      <p class="reviews-foot">
+        <a class="btn btn-outline" href="{{map.reviewsUri}}" target="_blank" rel="noopener noreferrer">{{reviews.readAll}}<span class="sr-only"> ({{a11y.newWindow}})</span></a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap visit-grid">
+      <div class="visit-copy">
+        <p class="eyebrow">{{visit.eyebrow}}</p>
+        <h2 id="visit-title">{{visit.title}}</h2>
+
+        <address class="visit-address">
+          {{place.street}}<br>
+          {{place.postalCode}} {{place.locality}}<br>
+          {{place.region}}, Spain
+        </address>
+
+        <div class="contact-actions">
+          <!--WHATSAPP_CONTACT-->
+
+          <a class="contact-btn" href="tel:{{place.phoneE164}}" aria-label="{{a11y.telAria}}">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" focusable="false"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2Z"/></svg>
+            </span>
+            <span class="contact-text"><strong>{{visit.call}}</strong><small>{{place.phoneNational}}</small></span>
+          </a>
+
+          <a class="contact-btn" href="{{map.directionsUri}}" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" focusable="false"><path fill="currentColor" d="M21.7 11.3 12.7 2.3a1 1 0 0 0-1.4 0l-9 9a1 1 0 0 0 0 1.4l9 9a1 1 0 0 0 1.4 0l9-9a1 1 0 0 0 0-1.4ZM13 14.5v-2h-4v3H7.5V11a1 1 0 0 1 1-1H13V8l3.5 3.2-3.5 3.3Z"/></svg>
+            </span>
+            <span class="contact-text"><strong>{{visit.directions}}</strong><small>{{visit.directionsSub}}</small></span>
+          </a>
+        </div>
+
+        <div class="hours">
+          <h3>{{visit.hours}}</h3>
+          <ul id="hours-list"><!--HOURS--></ul>
+        </div>
+      </div>
+
+      <div class="map-card">
+        <iframe
+          id="map-frame"
+          title="{{a11y.mapTitle}}"
+          src="{{map.embedUrl}}"
+          width="100%" height="100%"
+          style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <a class="map-link" href="{{map.placeUri}}" target="_blank" rel="noopener noreferrer">
+          {{visit.openMap}}
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14 3v2h3.6l-9.3 9.3 1.4 1.4L19 6.4V10h2V3h-7Z"/><path fill="currentColor" d="M19 19H5V5h5V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5h-2v5Z"/></svg>
+          <span class="sr-only"> ({{a11y.newWindow}})</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-name">{{place.name}}</span>
+      <span class="brand-sub">{{place.street}} · {{place.postalCode}} {{place.locality}}</span>
+    </div>
+    <nav class="footer-links" aria-label="{{a11y.footerNav}}">
+      <a href="#about">{{nav.about}}</a>
+      <a href="#reviews">{{nav.reviews}}</a>
+      <a href="#visit">{{nav.visit}}</a>
+      <a href="{{map.writeReviewUri}}" target="_blank" rel="noopener noreferrer">{{footer.writeReview}}</a>
+    </nav>
+  </div>
+  <div class="wrap footer-fine">
+    <p>© <span id="year">{{year}}</span> {{place.name}}. {{footer.rights}}</p>
+    <p>{{footerCredit}}</p>
+  </div>
+</footer>
+
+<!--WHATSAPP_FAB-->
+
+<script src="{{root}}assets/js/app.js" defer></script>
+</body>
+</html>

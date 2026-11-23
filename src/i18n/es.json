@@ -1,0 +1,172 @@
+{
+  "locale": "es",
+  "htmlLang": "es-ES",
+  "ogLocale": "es_ES",
+  "ogLocaleAlternate": "en_GB",
+  "dir": "ltr",
+  "pathPrefix": "",
+  "url": "https://yourdataweb.github.io/kiwi-guingueta/",
+
+  "meta": {
+    "title": "Kiwi Guingueta — Chiringuito en Vilanova i la Geltrú",
+    "description": "Kiwi Guingueta, chiringuito en el Passeig Voramar de Vilanova i la Geltrú. Cócteles, vino, buena comida, hamacas y acceso directo a la playa. Abierto todos los días de 10:00 a 00:00.",
+    "ogTitle": "Kiwi Guingueta — Chiringuito en Vilanova i la Geltrú",
+    "ogDescription": "Cócteles, vino y buena comida a pie de playa. Hamacas, acceso directo a la arena y abierto todos los días de 10:00 a 00:00."
+  },
+
+  "a11y": {
+    "skip": "Ir al contenido",
+    "home": "Kiwi Guingueta — inicio",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "mainNav": "Navegación principal",
+    "footerNav": "Navegación del pie de página",
+    "socialNav": "Redes sociales",
+    "atAGlance": "De un vistazo",
+    "mapTitle": "Mapa con la ubicación de Kiwi Guingueta en el Passeig Voramar, Vilanova i la Geltrú",
+    "waAria": "Escribir a Kiwi Guingueta por WhatsApp al 620 18 72 58",
+    "telAria": "Llamar a Kiwi Guingueta al 620 18 72 58",
+    "ratingAria": "Valoración de 4,2 sobre 5 basada en 336 reseñas de Google",
+    "langSwitch": "Cambiar idioma",
+    "posterAlt": "Ilustración de la terraza del chiringuito Kiwi Guingueta al atardecer",
+    "newWindow": "se abre en una pestaña nueva"
+  },
+
+  "brand": {
+    "sub": "Chiringuito · Vilanova i la Geltrú"
+  },
+
+  "nav": {
+    "about": "El sitio",
+    "highlights": "Qué hay",
+    "reviews": "Opiniones",
+    "visit": "Visítanos"
+  },
+
+  "langSwitch": {
+    "label": "Idioma",
+    "es": "ES",
+    "en": "EN",
+    "esAria": "Ver esta página en español",
+    "enAria": "Ver esta página en inglés"
+  },
+
+  "hero": {
+    "openNow": "Abierto ahora · hasta las {close}",
+    "closedOpens": "Cerrado · abre a las {open}",
+    "title": "Los pies en la arena,<br>la copa en la mano.",
+    "lede": "Un pequeño chiringuito en el Passeig Voramar, donde acaba la terraza y empieza el Mediterráneo. Bebidas frías, buena comida, hamacas y ninguna prisa.",
+    "ctaPrimary": "Cómo llegar",
+    "ctaWhatsapp": "WhatsApp",
+    "statRating": "sobre 5 en Google",
+    "statReviews": "reseñas en Google",
+    "statPrice": "por persona"
+  },
+
+  "about": {
+    "eyebrow": "El sitio",
+    "title": "Una guingueta es un bar pequeño junto al agua.<br>Esta es la nuestra.",
+    "p1": "Baja del Passeig Voramar y el asfalto se convierte en arena. Kiwi Guingueta está justo donde empieza la playa: un bar de techo de paja con terraza, unas cuantas hamacas para alquilar y una línea de visión directa al mar.",
+    "p2": "Ven a por un café por la mañana, quédate a comer sin prisa y deja que la tarde se convierta en cócteles. Los niños corretean, los perros son bienvenidos y nadie te mete prisa.",
+    "note": "Abierto todos los días, de 10:00 a medianoche.",
+    "factAddress": "Dirección",
+    "factPhone": "Teléfono",
+    "factHours": "Horario",
+    "hoursValue": "Todos los días, 10:00 – 00:00"
+  },
+
+  "highlights": {
+    "eyebrow": "Qué hay",
+    "title": "Todo lo que necesitas para un día junto al mar",
+    "f1Title": "Terraza frente al mar",
+    "f1Text": "Mesas en la arena, sombra arriba y el mar delante.",
+    "f2Title": "Hamacas para alquilar",
+    "f2Text": "Alquila una hamaca en el bar y accede a toda la playa.",
+    "f3Title": "Cócteles y vino",
+    "f3Text": "Cerveza, vino y cócteles, preparados a tu gusto.",
+    "f4Title": "Música en directo",
+    "f4Text": "De vez en cuando, alguien trae una guitarra.",
+    "f5Title": "Admite perros",
+    "f5Text": "Trae al perro. Y a los niños también.",
+    "f6Title": "Ideal para grupos",
+    "f6Text": "Espacio para repartirse y una mesa lo bastante grande."
+  },
+
+  "capabilities": {
+    "serviceOptions": "Servicio",
+    "foodAndDrink": "Comida y bebida",
+    "atmosphere": "Ambiente",
+    "amenities": "Instalaciones",
+    "parking": "Aparcamiento",
+    "accessibility": "Accesibilidad",
+    "payments": "Pagos",
+    "labels": {
+      "Outdoor seating": "Terraza exterior",
+      "Dine-in": "Para comer en el local",
+      "Takeaway": "Para llevar",
+      "Delivery": "A domicilio",
+      "Reservable": "Se puede reservar",
+      "Beer": "Cerveza",
+      "Wine": "Vino",
+      "Cocktails": "Cócteles",
+      "Good for children": "Apto para niños",
+      "Allows dogs": "Admite perros",
+      "Good for groups": "Ideal para grupos",
+      "Live music": "Música en directo",
+      "Restroom": "Aseos",
+      "Paid parking lot": "Aparcamiento de pago",
+      "Paid street parking": "Estacionamiento en la calle de pago",
+      "Wheelchair-accessible entrance": "Entrada accesible en silla de ruedas",
+      "Wheelchair-accessible parking": "Aparcamiento accesible en silla de ruedas",
+      "Credit cards": "Tarjetas de crédito",
+      "Debit cards": "Tarjetas de débito",
+      "Contactless (NFC)": "Pago sin contacto (NFC)",
+      "Cash only": "Solo efectivo"
+    }
+  },
+
+  "reviews": {
+    "eyebrow": "Lo que dicen",
+    "title": "De quienes ya han estado",
+    "count": "{count} reseñas",
+    "onGoogle": "en Google",
+    "readAll": "Ver todas las reseñas en Google",
+    "write": "Escribir una reseña",
+    "originalIn": "Original en {lang}",
+    "ratingLabel": "Valoración media"
+  },
+
+  "visit": {
+    "eyebrow": "Visítanos",
+    "title": "Encuéntranos en el Passeig",
+    "whatsapp": "WhatsApp",
+    "call": "Llamar",
+    "directions": "Cómo llegar",
+    "directionsSub": "Abrir en Maps",
+    "hours": "Horario de apertura",
+    "openMap": "Abrir en Google Maps",
+    "today": "Hoy"
+  },
+
+  "footer": {
+    "writeReview": "Escribir una reseña",
+    "rights": "Todos los derechos reservados.",
+    "dataNote": "Datos de Google Maps, actualizados a {date}.",
+    "credit": "Fotos y reseñas pertenecen a sus autores."
+  },
+
+  "days": {
+    "0": "Domingo",
+    "1": "Lunes",
+    "2": "Martes",
+    "3": "Miércoles",
+    "4": "Jueves",
+    "5": "Viernes",
+    "6": "Sábado"
+  },
+
+  "languageNames": {
+    "en": "inglés",
+    "es": "español"
+  }
+}

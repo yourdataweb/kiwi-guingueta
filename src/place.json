@@ -1,0 +1,126 @@
+{
+  "place": {
+    "id": "ChIJu0KdsneHoxIRANbP-eXV3YE",
+    "cid": "9357870784461133312",
+    "name": "Kiwi Guingueta",
+    "codeName": "kiwi-guingueta",
+    "formattedAddress": "Passeig Voramar, 5, 08800 Vilanova i la Geltrú, Barcelona, Spain",
+    "street": "Passeig Voramar, 5",
+    "locality": "Vilanova i la Geltrú",
+    "region": "Barcelona",
+    "postalCode": "08800",
+    "country": "ES",
+    "latitude": 41.2033767,
+    "longitude": 1.6846683,
+    "primaryType": "bar",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "phoneNational": "620 18 72 58",
+    "phoneInternational": "+34 620 18 72 58",
+    "phoneE164": "+34620187258",
+    "whatsappNumber": "34620187258",
+    "website": "",
+    "rating": 4.2,
+    "userRatingCount": 336,
+    "businessStatus": "OPERATIONAL",
+    "reviewCountLastChecked": 336,
+    "priceRange": { "currency": "EUR", "start": 10, "end": 20 },
+    "timeZone": "Europe/Madrid",
+    "plusCode": "8FH36M3M+9V"
+  },
+
+  "map": {
+    "embedUrl": "https://www.google.com/maps?q=41.2033767,1.6846683&z=17&output=embed",
+    "placeUri": "https://maps.google.com/?cid=9357870784461133312",
+    "directionsUri": "https://www.google.com/maps/dir/?api=1&destination=41.2033767,1.6846683&destination_place_id=ChIJu0KdsneHoxIRANbP-eXV3YE",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x12a38777b29d42bb:0x81ddd5e5f9cfd600!9m1!1b1",
+    "writeReviewUri": "https://search.google.com/local/writereview?placeid=ChIJu0KdsneHoxIRANbP-eXV3YE",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x12a38777b29d42bb:0x81ddd5e5f9cfd600!10e5"
+  },
+
+  "social": {
+    "_comment": "Only profiles present in the Places payload are listed. The payload contained no Instagram/Facebook/TikTok. Add 'instagram','facebook','tiktok' keys with a full URL here and they appear automatically in the social bar.",
+    "google": "https://maps.google.com/?cid=9357870784461133312"
+  },
+
+  "hours": {
+    "periods": [
+      { "day": 0, "open": "10:00", "close": "00:00" },
+      { "day": 1, "open": "10:00", "close": "00:00" },
+      { "day": 2, "open": "10:00", "close": "00:00" },
+      { "day": 3, "open": "10:00", "close": "00:00" },
+      { "day": 4, "open": "10:00", "close": "00:00" },
+      { "day": 5, "open": "10:00", "close": "00:00" },
+      { "day": 6, "open": "10:00", "close": "00:00" }
+    ]
+  },
+
+  "reviews": [
+    {
+      "author": "Richard Hill",
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIvyeyfie8lDYaVrOGRAi7xHsCU13BPjVZGz5eMQ_7eLj-G2g=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "lang": "en",
+      "relativeTime": { "es": "hace un mes", "en": "a month ago" },
+      "text": "Great bar with good food, nice friendly staff. Sunbeds for hire at the bar giving you full access to a fantastic beach. The ideal place for a day by the sea."
+    },
+    {
+      "author": "Lluís Bertran",
+      "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjU2xjh5vrW-izJhp_IkAuBeoobH85nsg_t8_k5hIe3dgCElUenV=s128-c0x00000000-cc-rp-mo-ba6",
+      "rating": 4,
+      "lang": "en",
+      "relativeTime": { "es": "hace 2 años", "en": "2 years ago" },
+      "text": "Looking for a glass of wine, a cocktail or an aperitif on the beach? Here you have one of the best near to Barcelona in Vilanova i la Geltrú. The atmosphere is magnificent, the environment is great, the weather is almost sure good in summer season."
+    },
+    {
+      "author": "Isabella Dicaprio",
+      "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjVVdk9b-HlB3Kkh8CVU2Q8ZD0Jk6MaMhLgUzNLummOcNrfbC6E=s128-c0x00000000-cc-rp-mo-ba7",
+      "rating": 4,
+      "lang": "en",
+      "relativeTime": { "es": "hace 4 años", "en": "4 years ago" },
+      "text": "Great place for a quick bite, a drink and a swim."
+    },
+    {
+      "author": "Francine Howard",
+      "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjVt6qPtExmtMysM9TCQoSnLSSMAwkqezyevlgJxle-kPdHVXjDE=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 5,
+      "lang": "en",
+      "relativeTime": { "es": "hace 2 años", "en": "2 years ago" },
+      "text": "Super friendly and welcoming, good food and nice drinks, lovely place on the beach."
+    }
+  ],
+
+  "features": {
+    "serviceOptions": [
+      { "key": "Outdoor seating", "value": true },
+      { "key": "Dine-in", "value": true },
+      { "key": "Takeaway", "value": true },
+      { "key": "Delivery", "value": false },
+      { "key": "Reservable", "value": true }
+    ],
+    "foodAndDrink": [
+      { "key": "Beer", "value": true },
+      { "key": "Wine", "value": true },
+      { "key": "Cocktails", "value": true }
+    ],
+    "atmosphere": [
+      { "key": "Good for children", "value": true },
+      { "key": "Allows dogs", "value": true },
+      { "key": "Good for groups", "value": true }
+    ],
+    "amenities": [
+      { "key": "Restroom", "value": true }
+    ],
+    "parking": [
+      { "key": "Paid parking lot", "value": true },
+      { "key": "Paid street parking", "value": true }
+    ],
+    "accessibility": [
+      { "key": "Wheelchair-accessible entrance", "value": true }
+    ],
+    "payments": [
+      { "key": "Credit cards", "value": true },
+      { "key": "Debit cards", "value": true },
+      { "key": "Contactless (NFC)", "value": true }
+    ]
+  }
+}

@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Build and deploy to GitHub Pages
 
 on:
   push:
@@ -15,14 +15,31 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Build both locales
+        run: node scripts/build.mjs
+
+      - name: Fail on unresolved template holes
+        run: |
+          if grep -rqE '\{\{[a-zA-Z0-9_.]+\}\}' index.html en/index.html; then
+            echo "::error::Unresolved {{i18n}} holes in generated HTML"
+            grep -roE '\{\{[a-zA-Z0-9_.]+\}\}' index.html en/index.html | sort -u
+            exit 1
+          fi
+          if grep -rqE '<!--(SOCIAL|LANG|WHATSAPP_[A-Z_]+|RATING_[A-Z_]+|CAPABILITIES|REVIEWS|HOURS)-->' index.html en/index.html; then
+            echo "::error::Unresolved template markers in generated HTML"
+            exit 1
+          fi
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -32,6 +49,13 @@ jobs:
         with:
           path: .
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
