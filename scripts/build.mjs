@@ -275,10 +275,12 @@ function buildPage({ dict, otherDict, place }) {
   const url = `${SITE}/${dict.pathPrefix}`;
   const altEsUrl = `${SITE}/`;
   const altEnUrl = `${SITE}/en/`;
-  const root = dict.pathPrefix ? '../' : '';
+  const root = dict.pathPrefix ? '../' : './';
 
-  const linkEs = isEs ? 'index.html' : '../index.html';
-  const linkEn = isEs ? 'en/index.html' : 'index.html';
+  // On GitHub Pages these resolve to the canonical directory URLs (/ and /en/),
+  // which keeps the switch consistent with the hreflang pairs.
+  const linkEs = isEs ? './' : '../';
+  const linkEn = isEs ? 'en/' : './';
 
   const wa = showWhatsApp(place);
   const ratingBadge = showRatingBadge(place);
