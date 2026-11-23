@@ -1,0 +1,148 @@
+{
+  "place": {
+    "id": "ChIJu0KdsneHoxIRANbP-eXV3YE",
+    "cid": "9357870784461133312",
+    "name": "Kiwi Guingueta",
+    "codeName": "kiwi-guingueta",
+    "formattedAddress": "Passeig Voramar, 5, 08800 Vilanova i la Geltrú, Barcelona, Spain",
+    "street": "Passeig Voramar, 5",
+    "locality": "Vilanova i la Geltrú",
+    "region": "Barcelona",
+    "postalCode": "08800",
+    "country": "Spain",
+    "latitude": 41.2033767,
+    "longitude": 1.6846683,
+    "primaryType": "bar",
+    "types": ["bar", "point_of_interest", "establishment"],
+    "typeLabel": "Bar",
+    "phoneNational": "620 18 72 58",
+    "phoneInternational": "+34 620 18 72 58",
+    "phoneE164": "+34620187258",
+    "whatsappNumber": "34620187258",
+    "website": "",
+    "rating": 4.2,
+    "userRatingCount": 336,
+    "businessStatus": "OPERATIONAL",
+    "priceRange": {
+      "currency": "EUR",
+      "start": 10,
+      "end": 20,
+      "label": "€10–20"
+    },
+    "timeZone": "Europe/Madrid",
+    "plusCode": {
+      "globalCode": "8FH36M3M+9V",
+      "compoundCode": "6M3M+9V Vilanova i la Geltrú, Spain"
+    }
+  },
+  "map": {
+    "embedUrl": "https://www.google.com/maps?q=41.2033767,1.6846683&z=17&output=embed",
+    "placeUri": "https://maps.google.com/?cid=9357870784461133312",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x12a38777b29d42bb:0x81ddd5e5f9cfd600!3e0?g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x12a38777b29d42bb:0x81ddd5e5f9cfd600!9m1!1b1",
+    "writeReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x12a38777b29d42bb:0x81ddd5e5f9cfd600!12e1",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x12a38777b29d42bb:0x81ddd5e5f9cfd600!10e5"
+  },
+  "hours": {
+    "openNow": true,
+    "nextCloseTime": "2026-08-12T22:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 10:00 AM – 12:00 AM",
+      "Tuesday: 10:00 AM – 12:00 AM",
+      "Wednesday: 10:00 AM – 12:00 AM",
+      "Thursday: 10:00 AM – 12:00 AM",
+      "Friday: 10:00 AM – 12:00 AM",
+      "Saturday: 10:00 AM – 12:00 AM",
+      "Sunday: 10:00 AM – 12:00 AM"
+    ],
+    "periods": [
+      { "day": 0, "open": "10:00", "close": "00:00", "closeNextDay": true },
+      { "day": 1, "open": "10:00", "close": "00:00", "closeNextDay": true },
+      { "day": 2, "open": "10:00", "close": "00:00", "closeNextDay": true },
+      { "day": 3, "open": "10:00", "close": "00:00", "closeNextDay": true },
+      { "day": 4, "open": "10:00", "close": "00:00", "closeNextDay": true },
+      { "day": 5, "open": "10:00", "close": "00:00", "closeNextDay": true },
+      { "day": 6, "open": "10:00", "close": "00:00", "closeNextDay": true }
+    ]
+  },
+  "reviews": [
+    {
+      "author": "Richard HIll",
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIvyeyfie8lDYaVrOGRAi7xHsCU13BPjVZGz5eMQ_7eLj-G2g=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "relativeTime": "a month ago",
+      "language": "en",
+      "text": "Great bar with good food, nice friendly staff. Sunbeds for hire at the bar giving you full access to a fantastic beach. The ideal place for a day by the sea."
+    },
+    {
+      "author": "Lluís Bertran",
+      "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjU2xjh5vrW-izJhp_IkAuBeoobH85nsg_t8_k5hIe3dgCElUenV=s128-c0x00000000-cc-rp-mo-ba6",
+      "rating": 4,
+      "relativeTime": "2 years ago",
+      "language": "en",
+      "text": "Looking for a glass of wine, a cocktail or an aperitif on the beach? Here you have one of the best near to Barcelona in Vilanova i la Geltrú. The atmosphere is magnificent, the environment is great, the weather is almost sure good in summer season."
+    },
+    {
+      "author": "Isabella Dicaprio",
+      "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjVVdk9b-HlB3Kkh8CVU2Q8ZD0Jk6MaMhLgUzNLummOcNrfbC6E=s128-c0x00000000-cc-rp-mo-ba7",
+      "rating": 4,
+      "relativeTime": "4 years ago",
+      "language": "en",
+      "text": "Great place for a quick bite, a drink and a swim."
+    },
+    {
+      "author": "Francine Howard",
+      "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjVt6qPtExmtMysM9TCQoSnLSSMAwkqezyevlgJxle-kPdHVXjDE=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 5,
+      "relativeTime": "2 years ago",
+      "language": "en",
+      "text": "Super friendly and welcoming, good food and nice drinks, lovely place on the beach."
+    }
+  ],
+  "highlights": [
+    "Seafront terrace",
+    "Sunbeds & direct beach access",
+    "Cocktails & wine",
+    "Live music",
+    "Dog friendly",
+    "Good for groups"
+  ],
+  "features": {
+    "serviceOptions": [
+      { "label": "Outdoor seating", "value": true },
+      { "label": "Dine-in", "value": true },
+      { "label": "Takeaway", "value": true },
+      { "label": "Delivery", "value": false },
+      { "label": "Reservable", "value": true }
+    ],
+    "foodAndDrink": [
+      { "label": "Beer", "value": true },
+      { "label": "Wine", "value": true },
+      { "label": "Cocktails", "value": true }
+    ],
+    "atmosphere": [
+      { "label": "Good for children", "value": true },
+      { "label": "Allows dogs", "value": true },
+      { "label": "Good for groups", "value": true },
+      { "label": "Live music", "value": null }
+    ],
+    "amenities": [
+      { "label": "Restroom", "value": true }
+    ],
+    "parking": [
+      { "label": "Paid parking lot", "value": true },
+      { "label": "Paid street parking", "value": true }
+    ],
+    "accessibility": [
+      { "label": "Wheelchair-accessible entrance", "value": true },
+      { "label": "Wheelchair-accessible parking", "value": false }
+    ],
+    "payments": [
+      { "label": "Credit cards", "value": true },
+      { "label": "Debit cards", "value": true },
+      { "label": "Contactless (NFC)", "value": true },
+      { "label": "Cash only", "value": false }
+    ]
+  },
+  "photoNote": "raw_photos holds Places API photo resource names, not public URLs. Resolve them through places.googleapis.com/v1/{name}/media with a Places API key — see scripts/fetch-photos.mjs. Until then the site ships a generated poster image."
+}

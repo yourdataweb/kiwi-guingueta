@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yourdataweb.github.io/kiwi-guingueta/sitemap.xml

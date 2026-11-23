@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Illustration of a beach bar terrace at golden hour, with the Mediterranean beyond">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#0b3a4a"/>
+      <stop offset="34%"  stop-color="#1a647c"/>
+      <stop offset="62%"  stop-color="#4a9db0"/>
+      <stop offset="82%"  stop-color="#f6be6a"/>
+      <stop offset="100%" stop-color="#f0a33c"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#1a647c"/>
+      <stop offset="45%"  stop-color="#124c60"/>
+      <stop offset="100%" stop-color="#062733"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#e9dfc9"/>
+      <stop offset="100%" stop-color="#d8c8a6"/>
+    </linearGradient>
+    <linearGradient id="sunGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#fde3a7" stop-opacity=".95"/>
+      <stop offset="100%" stop-color="#f0a33c" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="sunDisc" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#fff6df"/>
+      <stop offset="70%"  stop-color="#f9cf85"/>
+      <stop offset="100%" stop-color="#f0a33c"/>
+    </radialGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <!-- sky -->
+  <rect width="1600" height="900" fill="url(#sky)"/>
+
+  <!-- sun -->
+  <circle cx="1120" cy="470" r="230" fill="url(#sunGlow)" filter="url(#soft)"/>
+  <circle cx="1120" cy="470" r="74" fill="url(#sunDisc)"/>
+
+  <!-- horizon cloud bands -->
+  <g opacity=".22" fill="#fbeed2">
+    <rect x="0" y="392" width="1600" height="9" rx="4.5"/>
+    <rect x="180" y="424" width="900" height="6" rx="3"/>
+    <rect x="720" y="360" width="700" height="5" rx="2.5"/>
+    <rect x="60" y="452" width="520" height="4" rx="2"/>
+  </g>
+
+  <!-- sea -->
+  <rect y="500" width="1600" height="180" fill="url(#sea)"/>
+  <!-- sun path on water -->
+  <g opacity=".5" fill="#f9cf85">
+    <rect x="1064" y="512" width="112" height="5" rx="2.5"/>
+    <rect x="1078" y="530" width="84"  height="4" rx="2"/>
+    <rect x="1052" y="550" width="136" height="4" rx="2"/>
+    <rect x="1088" y="570" width="64"  height="3.5" rx="1.75"/>
+    <rect x="1066" y="592" width="108" height="3" rx="1.5"/>
+    <rect x="1096" y="614" width="48"  height="3" rx="1.5"/>
+    <rect x="1074" y="636" width="92"  height="2.5" rx="1.25"/>
+  </g>
+  <!-- sea sparkle -->
+  <g opacity=".3" stroke="#a8d4dd" stroke-width="2.5" stroke-linecap="round">
+    <path d="M120 540h60"/><path d="M240 566h44"/><path d="M400 530h70"/>
+    <path d="M560 566h38"/><path d="M700 544h54"/><path d="M860 566h48"/>
+    <path d="M1320 536h64"/><path d="M1420 566h40"/><path d="M980 590h56"/>
+  </g>
+
+  <!-- beach -->
+  <path d="M0 676 C 300 660 640 690 980 672 C 1240 658 1440 686 1600 668 L1600 900 L0 900 Z" fill="url(#sand)"/>
+
+  <!-- wet sand sheen -->
+  <path d="M0 676 C 300 660 640 690 980 672 C 1240 658 1440 686 1600 668 L1600 700 C 1440 716 1240 690 980 704 C 640 722 300 692 0 708 Z"
+        fill="#ffffff" opacity=".18"/>
+
+  <!-- ============ beach bar structure ============ -->
+  <g>
+    <!-- posts -->
+    <rect x="212" y="404" width="13" height="286" rx="5" fill="#6b5533"/>
+    <rect x="548" y="404" width="13" height="286" rx="5" fill="#6b5533"/>
+    <rect x="392" y="418" width="11" height="272" rx="4" fill="#7d6640"/>
+
+    <!-- thatch roof -->
+    <path d="M150 430 L386 352 L622 430 L600 442 L386 376 L172 442 Z" fill="#8a6f42"/>
+    <path d="M158 432 L386 356 L614 432 L608 470 L386 396 L164 470 Z" fill="#a2824f"/>
+    <!-- thatch texture -->
+    <g stroke="#7a6035" stroke-width="2.5" opacity=".6" stroke-linecap="round">
+      <path d="M200 448l16 18"/><path d="M248 434l14 20"/><path d="M300 420l12 22"/>
+      <path d="M356 406l10 24"/><path d="M414 406l-10 24"/><path d="M470 420l-12 22"/>
+      <path d="M522 434l-14 20"/><path d="M570 448l-16 18"/>
+    </g>
+    <!-- roof underside shadow -->
+    <path d="M196 452 L386 392 L576 452 L576 462 L386 404 L196 462 Z" fill="#5b4728" opacity=".55"/>
+
+    <!-- bar counter -->
+    <rect x="250" y="556" width="270" height="26" rx="8" fill="#8a6f42"/>
+    <rect x="250" y="556" width="270" height="9"  rx="4.5" fill="#b0935c"/>
+    <rect x="262" y="582" width="246" height="96" rx="6" fill="#6b5533" opacity=".82"/>
+    <!-- bottles on counter -->
+    <g fill="#2f4a3e">
+      <rect x="286" y="536" width="9" height="22" rx="3"/>
+      <rect x="306" y="528" width="9" height="30" rx="3"/>
+      <rect x="326" y="540" width="8" height="18" rx="2.5"/>
+    </g>
+    <g fill="#7cb342" opacity=".9">
+      <rect x="300" y="532" width="7" height="6" rx="2"/>
+      <rect x="320" y="544" width="6" height="5" rx="2"/>
+    </g>
+
+    <!-- glasses on counter -->
+    <g fill="none" stroke="#f5efe2" stroke-width="2.6" opacity=".85">
+      <path d="M404 538h16l-3 18h-10z"/>
+      <path d="M440 542h13l-2.5 14h-8z"/>
+    </g>
+
+    <!-- string lights -->
+    <path d="M180 430 C 300 466 470 466 600 430" fill="none" stroke="#4a3a20" stroke-width="2" opacity=".65"/>
+    <g fill="#ffe6a8">
+      <circle cx="230" cy="450" r="5.5" opacity=".95"/>
+      <circle cx="300" cy="459" r="5.5" opacity=".95"/>
+      <circle cx="386" cy="462" r="6"   opacity=".95"/>
+      <circle cx="470" cy="459" r="5.5" opacity=".95"/>
+      <circle cx="546" cy="450" r="5.5" opacity=".95"/>
+    </g>
+    <g fill="#fff8e2" opacity=".5">
+      <circle cx="386" cy="462" r="16"/>
+    </g>
+  </g>
+
+  <!-- ============ sunbeds ============ -->
+  <g opacity=".92">
+    <!-- bed 1 -->
+    <g transform="translate(760 690)">
+      <rect x="0" y="0" width="132" height="16" rx="8" fill="#f5efe2"/>
+      <path d="M6 0 h34" stroke="#e2694f" stroke-width="16" stroke-linecap="round" opacity=".85"/>
+      <rect x="10" y="16" width="6" height="16" rx="3" fill="#8a6f42"/>
+      <rect x="116" y="16" width="6" height="16" rx="3" fill="#8a6f42"/>
+      <!-- backrest -->
+      <path d="M0 0 L-26 -30" stroke="#f5efe2" stroke-width="14" stroke-linecap="round"/>
+    </g>
+    <!-- bed 2 -->
+    <g transform="translate(940 706)">
+      <rect x="0" y="0" width="120" height="14" rx="7" fill="#f5efe2"/>
+      <path d="M6 0 h30" stroke="#4a9db0" stroke-width="14" stroke-linecap="round" opacity=".85"/>
+      <rect x="9" y="14" width="5" height="14" rx="2.5" fill="#8a6f42"/>
+      <rect x="106" y="14" width="5" height="14" rx="2.5" fill="#8a6f42"/>
+      <path d="M0 0 L-22 -26" stroke="#f5efe2" stroke-width="12" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- ============ umbrella ============ -->
+  <g>
+    <rect x="1304" y="600" width="8" height="140" rx="3.5" fill="#8a6f42"/>
+    <path d="M1224 610 C 1260 542 1360 542 1396 610 Z" fill="#f0a33c"/>
+    <path d="M1270 610 C 1288 566 1332 566 1350 610 Z" fill="#f5efe2" opacity=".9"/>
+    <path d="M1224 610 h172" stroke="#c9822b" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- ============ palms, right ============ -->
+  <g opacity=".9">
+    <path d="M1466 682 C 1452 596 1458 522 1490 462" stroke="#4a3a20" stroke-width="11" fill="none" stroke-linecap="round"/>
+    <g fill="#2f6b3f">
+      <path d="M1490 462 C 1530 430 1580 428 1600 442 C 1566 448 1522 460 1490 476 Z"/>
+      <path d="M1488 460 C 1470 420 1430 402 1398 404 C 1428 424 1458 448 1478 470 Z"/>
+      <path d="M1490 458 C 1508 414 1552 396 1588 400 C 1556 420 1522 442 1500 468 Z"/>
+      <path d="M1486 462 C 1448 444 1408 448 1386 466 C 1420 466 1456 476 1482 484 Z"/>
+    </g>
+    <path d="M1420 686 C 1410 626 1414 566 1436 522" stroke="#4a3a20" stroke-width="9" fill="none" stroke-linecap="round" opacity=".85"/>
+    <g fill="#2f6b3f" opacity=".85">
+      <path d="M1436 522 C 1466 500 1504 500 1520 512 C 1494 516 1462 524 1440 532 Z"/>
+      <path d="M1434 520 C 1420 490 1390 476 1366 478 C 1390 492 1412 510 1426 528 Z"/>
+    </g>
+  </g>
+
+  <!-- foreground sand shadow -->
+  <path d="M0 812 C 380 792 760 826 1140 806 C 1340 796 1480 812 1600 800 L1600 900 L0 900 Z" fill="#c9b58f" opacity=".55"/>
+
+  <!-- warm light wash -->
+  <rect width="1600" height="900" fill="#f0a33c" opacity=".07"/>
+  <!-- grain -->
+  <rect width="1600" height="900" filter="url(#grain)" opacity=".5"/>
+</svg>

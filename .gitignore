@@ -1,0 +1,15 @@
+# dependencies
+node_modules/
+
+# local env / secrets
+.env
+.env.local
+*.pem
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+.idea/
