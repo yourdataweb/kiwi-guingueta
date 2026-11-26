@@ -41,7 +41,7 @@
     gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});
     function load(){ if(window.__gaLoaded) return; window.__gaLoaded=true;
       var s=document.createElement('script'); s.async=true;
-      s.src='https://www.googletagmanager.com/gtag/js?id='+ID; document.head.appendChild(s); gtag('config', ID, { cookie_domain: 'none' }); }
+      s.src='https://www.googletagmanager.com/gtag/js?id='+ID; document.head.appendChild(s); gtag('config', ID); }
     function grant(){ load(); gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'}); }
     window.__analyticsConsent=function(ok){ try{localStorage.setItem(KEY, ok?'accepted':'essential');}catch(e){}
       if(ok) grant(); };
