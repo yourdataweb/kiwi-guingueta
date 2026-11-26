@@ -1,0 +1,106 @@
+{
+  "locale": "ca",
+  "htmlLang": "ca",
+  "ogLocale": "ca_ES",
+  "pathPrefix": "./",
+  "countryName": "Espanya",
+  "brand": {
+    "sub": "Guingueta · Passeig Voramar"
+  },
+  "meta": {
+    "title": "Kiwi Guingueta · Bar de platja al Passeig Voramar",
+    "description": "Bar i guingueta al Passeig Voramar, 5, Vilanova i la Geltrú, tocant a la platja. Begudes, tapes i gandules per passar el dia a la sorra. Telèfon: 620 18 72 58.",
+    "ogAlt": "Kiwi Guingueta, bar de platja a Vilanova i la Geltrú"
+  },
+  "nav": {
+    "roast": "La guingueta",
+    "menu": "La carta",
+    "visit": "On som",
+    "skip": "Ves al contingut principal",
+    "label": "Navegació principal"
+  },
+  "hero": {
+    "eyebrow": "Passeig Voramar · Vilanova i la Geltrú",
+    "title": "Un bar a peu de sorra",
+    "lede": "Begudes fredes, tapes i gandules per llogar. Una guingueta al Passeig Voramar on passes de la tovallola a la taula sense calçar-te.",
+    "whatsapp": "Escriu per WhatsApp",
+    "photoAlt": "il·lustració de la guingueta a la platja",
+    "credit": ""
+  },
+  "strip": {
+    "label": "Informació pràctica",
+    "where": "On som",
+    "order": "Comandes",
+    "orderValue": "A la barra o per WhatsApp",
+    "rating": "Valoració",
+    "reviews": "opinions"
+  },
+  "roast": {
+    "eyebrow": "La guingueta",
+    "title": "Tot el que cal per a un dia de platja",
+    "lead": "El que fa que la gent hi torni és la combinació: beguda freda, menjar senzill i una gandula a prop de l'aigua."
+  },
+  "menu": {
+    "eyebrow": "La carta",
+    "title": "Què hi ha per beure i picar",
+    "lead": "Una carta curta pensada per al sol: begudes, tapes i plats que es poden menjar amb una mà.",
+    "items": {
+      "m1": {
+        "name": "Begudes i còctels",
+        "note": "Fredes, per al sol, amb o sense alcohol."
+      },
+      "m2": {
+        "name": "Tapes i plats petits",
+        "note": "Per picar sense deixar la tovallola gaire estona."
+      },
+      "m3": {
+        "name": "Plats combinats",
+        "note": "Alguna cosa més consistent per dinar."
+      },
+      "m4": {
+        "name": "Gelats",
+        "note": "Per refrescar-se a mitja tarda."
+      },
+      "m5": {
+        "name": "Cafè",
+        "note": "També a la platja, quan baixa el sol."
+      },
+      "m6": {
+        "name": "Gandules",
+        "note": "Lloguer de gandules i para-sol."
+      }
+    },
+    "note": "Sense preus en aquesta pàgina: pregunta a la barra o per WhatsApp."
+  },
+  "reviews": {
+    "eyebrow": "Opinions",
+    "title": "Què diu qui hi ha passat el dia",
+    "lead": "Extractes d'opinions publicades a Google per clients de la guingueta.",
+    "readAll": "Llegeix totes les opinions"
+  },
+  "visit": {
+    "eyebrow": "On som",
+    "title": "Com arribar-hi",
+    "lead": "Al Passeig Voramar, 5, a tocar de la platja de Vilanova. Si vens amb cotxe, aparca al passeig i camina fins a la sorra.",
+    "address": "Adreça",
+    "phone": "Telèfon",
+    "plus": "Plus Code",
+    "directions": "Com arribar-hi",
+    "mapTitle": "Mapa amb la ubicació de Kiwi Guingueta a Vilanova i la Geltrú",
+    "mapNote": "El mapa només es carrega si acceptes les galetes de tercers.",
+    "mapLoad": "Carrega el mapa"
+  },
+  "footer": {
+    "legal": "Aquesta pàgina és una fitxa informativa de la guingueta. Per a reserves i disponibilitat, contacta directament amb l'establiment."
+  },
+  "cookies": {
+    "text": "Fem servir galetes tècniques per recordar la teva elecció. Si acceptes, també mesurem les visites amb Google Analytics i carreguem el mapa de Google.",
+    "accept": "Accepta",
+    "reject": "Només essencials",
+    "policy": "Més informació"
+  },
+  "a11y": {
+    "langSwitch": "Canviar d'idioma",
+    "menuToggle": "Obre el menú de navegació"
+  }
+}

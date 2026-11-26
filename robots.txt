@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yourdataweb.github.io/kiwi-guingueta/sitemap.xml
+Sitemap: https://kiwi-guingueta.vilanovailageltru.info/sitemap.xml

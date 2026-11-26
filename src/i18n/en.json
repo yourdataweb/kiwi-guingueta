@@ -1,172 +1,106 @@
 {
   "locale": "en",
-  "htmlLang": "en-GB",
+  "htmlLang": "en",
   "ogLocale": "en_GB",
-  "ogLocaleAlternate": "es_ES",
-  "dir": "ltr",
-  "pathPrefix": "en/",
-  "url": "https://yourdataweb.github.io/kiwi-guingueta/en/",
-
-  "meta": {
-    "title": "Kiwi Guingueta — Beach Bar in Vilanova i la Geltrú",
-    "description": "Kiwi Guingueta, a beach bar on the Passeig Voramar in Vilanova i la Geltrú. Cocktails, wine, good food, sunbeds and direct beach access. Open daily 10:00–00:00.",
-    "ogTitle": "Kiwi Guingueta — Beach Bar in Vilanova i la Geltrú",
-    "ogDescription": "Cocktails, wine and good food right on the beach. Sunbeds for hire, direct beach access, open daily 10:00–00:00."
-  },
-
-  "a11y": {
-    "skip": "Skip to content",
-    "home": "Kiwi Guingueta — home",
-    "openMenu": "Open menu",
-    "closeMenu": "Close menu",
-    "mainNav": "Main navigation",
-    "footerNav": "Footer navigation",
-    "socialNav": "Social media",
-    "atAGlance": "At a glance",
-    "mapTitle": "Map showing Kiwi Guingueta on Passeig Voramar, Vilanova i la Geltrú",
-    "waAria": "Message Kiwi Guingueta on WhatsApp at 620 18 72 58",
-    "telAria": "Call Kiwi Guingueta on 620 18 72 58",
-    "ratingAria": "Rated 4.2 out of 5 from 336 Google reviews",
-    "langSwitch": "Change language",
-    "posterAlt": "Illustration of the Kiwi Guingueta beach terrace at sunset",
-    "newWindow": "opens in a new tab"
-  },
-
+  "pathPrefix": "../",
+  "countryName": "Spain",
   "brand": {
-    "sub": "Beach bar · Vilanova i la Geltrú"
+    "sub": "Beach bar · Passeig Voramar"
   },
-
+  "meta": {
+    "title": "Kiwi Guingueta · Beach bar on the Passeig Voramar",
+    "description": "Beach bar at Passeig Voramar, 5, Vilanova i la Geltrú, right by the sand. Drinks, tapas and sunbeds for a day on the beach. Phone: 620 18 72 58.",
+    "ogAlt": "Kiwi Guingueta, beach bar in Vilanova i la Geltrú"
+  },
   "nav": {
-    "about": "About",
-    "highlights": "What's here",
-    "reviews": "Reviews",
-    "visit": "Visit"
+    "roast": "The beach bar",
+    "menu": "The menu",
+    "visit": "Find us",
+    "skip": "Skip to main content",
+    "label": "Main navigation"
   },
-
-  "langSwitch": {
-    "label": "Language",
-    "es": "ES",
-    "en": "EN",
-    "esAria": "View this page in Spanish",
-    "enAria": "View this page in English"
-  },
-
   "hero": {
-    "openNow": "Open now · until {close}",
-    "closedOpens": "Closed · opens {open}",
-    "title": "Feet in the sand,<br>drink in hand.",
-    "lede": "A little beach bar on the Passeig Voramar, where the terrace ends and the Mediterranean begins. Cold drinks, good food, sunbeds, and nowhere to be.",
-    "ctaPrimary": "Find us",
-    "ctaWhatsapp": "WhatsApp",
-    "statRating": "out of 5 on Google",
-    "statReviews": "Google reviews",
-    "statPrice": "per person"
+    "eyebrow": "Passeig Voramar · Vilanova i la Geltrú",
+    "title": "A bar right on the sand",
+    "lede": "Cold drinks, tapas and sunbeds to hire. A beach bar on the Passeig Voramar where you go from towel to table without putting your shoes on.",
+    "whatsapp": "Message on WhatsApp",
+    "photoAlt": "illustration of the beach bar",
+    "credit": ""
   },
-
-  "about": {
-    "eyebrow": "The place",
-    "title": "A guingueta is a small bar by the water.<br>This one is ours.",
-    "p1": "Step off the Passeig Voramar and the pavement turns to sand. Kiwi Guingueta sits right where the beach begins — a thatched-roof bar with a terrace, a few sunbeds for hire, and a line of sight straight out to sea.",
-    "p2": "Come for a coffee in the morning, stay for a long lunch, and let the afternoon turn into cocktails. Children run about, dogs are welcome, and nobody hurries you along.",
-    "note": "Open every day, 10:00 until midnight.",
-    "factAddress": "Address",
-    "factPhone": "Phone",
-    "factHours": "Hours",
-    "hoursValue": "Daily, 10:00 – 00:00"
+  "strip": {
+    "label": "Practical information",
+    "where": "Where we are",
+    "order": "Orders",
+    "orderValue": "At the bar or on WhatsApp",
+    "rating": "Rating",
+    "reviews": "reviews"
   },
-
-  "highlights": {
-    "eyebrow": "What's here",
-    "title": "Everything you need for a day by the sea",
-    "f1Title": "Seafront terrace",
-    "f1Text": "Tables on the sand, shade overhead, sea in front.",
-    "f2Title": "Sunbeds for hire",
-    "f2Text": "Rent a bed at the bar and get full access to the beach.",
-    "f3Title": "Cocktails & wine",
-    "f3Text": "Beer, wine and cocktails, mixed the way you like them.",
-    "f4Title": "Live music",
-    "f4Text": "Now and then, someone brings a guitar.",
-    "f5Title": "Dog friendly",
-    "f5Text": "Bring the dog. Bring the children too.",
-    "f6Title": "Good for groups",
-    "f6Text": "Room to spread out, and a table big enough."
+  "roast": {
+    "eyebrow": "The beach bar",
+    "title": "Everything you need for a day at the beach",
+    "lead": "What brings people back is the combination: a cold drink, simple food and a sunbed near the water."
   },
-
-  "capabilities": {
-    "serviceOptions": "Service",
-    "foodAndDrink": "Food & drink",
-    "atmosphere": "Atmosphere",
-    "amenities": "Amenities",
-    "parking": "Parking",
-    "accessibility": "Accessibility",
-    "payments": "Payments",
-    "labels": {
-      "Outdoor seating": "Outdoor seating",
-      "Dine-in": "Dine-in",
-      "Takeaway": "Takeaway",
-      "Delivery": "Delivery",
-      "Reservable": "Reservable",
-      "Beer": "Beer",
-      "Wine": "Wine",
-      "Cocktails": "Cocktails",
-      "Good for children": "Good for children",
-      "Allows dogs": "Allows dogs",
-      "Good for groups": "Good for groups",
-      "Live music": "Live music",
-      "Restroom": "Restroom",
-      "Paid parking lot": "Paid parking lot",
-      "Paid street parking": "Paid street parking",
-      "Wheelchair-accessible entrance": "Wheelchair-accessible entrance",
-      "Wheelchair-accessible parking": "Wheelchair-accessible parking",
-      "Credit cards": "Credit cards",
-      "Debit cards": "Debit cards",
-      "Contactless (NFC)": "Contactless (NFC)",
-      "Cash only": "Cash only"
-    }
+  "menu": {
+    "eyebrow": "The menu",
+    "title": "What there is to drink and pick at",
+    "lead": "A short menu built for the sun: drinks, tapas and dishes you can eat with one hand.",
+    "items": {
+      "m1": {
+        "name": "Drinks and cocktails",
+        "note": "Cold, for the sun, with or without alcohol."
+      },
+      "m2": {
+        "name": "Tapas and small plates",
+        "note": "To pick at without leaving the towel for long."
+      },
+      "m3": {
+        "name": "Combination plates",
+        "note": "Something more substantial for lunch."
+      },
+      "m4": {
+        "name": "Ice cream",
+        "note": "To cool down mid-afternoon."
+      },
+      "m5": {
+        "name": "Coffee",
+        "note": "On the beach too, once the sun drops."
+      },
+      "m6": {
+        "name": "Sunbeds",
+        "note": "Sunbeds and parasols to hire."
+      }
+    },
+    "note": "No prices on this page: ask at the bar or on WhatsApp."
   },
-
   "reviews": {
-    "eyebrow": "What people say",
-    "title": "From the people who've been",
-    "count": "{count} reviews",
-    "onGoogle": "on Google",
-    "readAll": "Read all reviews on Google",
-    "write": "Write a review",
-    "originalIn": "Originally in {lang}",
-    "ratingLabel": "Average rating"
+    "eyebrow": "Reviews",
+    "title": "What people say after a day here",
+    "lead": "Extracts from Google reviews by customers of the beach bar.",
+    "readAll": "Read all reviews"
   },
-
   "visit": {
-    "eyebrow": "Visit",
-    "title": "Find us on the Passeig",
-    "whatsapp": "WhatsApp",
-    "call": "Call",
-    "directions": "Directions",
-    "directionsSub": "Open in Maps",
-    "hours": "Opening hours",
-    "openMap": "Open in Google Maps",
-    "today": "Today"
+    "eyebrow": "Find us",
+    "title": "How to get here",
+    "lead": "At Passeig Voramar, 5, next to Vilanova beach. If you come by car, park on the promenade and walk down to the sand.",
+    "address": "Address",
+    "phone": "Phone",
+    "plus": "Plus Code",
+    "directions": "Get directions",
+    "mapTitle": "Map showing the location of Kiwi Guingueta in Vilanova i la Geltrú",
+    "mapNote": "The map only loads if you accept third-party cookies.",
+    "mapLoad": "Load the map"
   },
-
   "footer": {
-    "writeReview": "Write a review",
-    "rights": "All rights reserved.",
-    "dataNote": "Details from Google Maps, current as of {date}.",
-    "credit": "Photos and reviews belong to their authors."
+    "legal": "This page is an information sheet for the beach bar. For bookings and availability, please contact the venue directly."
   },
-
-  "days": {
-    "0": "Sunday",
-    "1": "Monday",
-    "2": "Tuesday",
-    "3": "Wednesday",
-    "4": "Thursday",
-    "5": "Friday",
-    "6": "Saturday"
+  "cookies": {
+    "text": "We use technical cookies to remember your choice. If you accept, we also measure visits with Google Analytics and load the Google map.",
+    "accept": "Accept",
+    "reject": "Essentials only",
+    "policy": "More information"
   },
-
-  "languageNames": {
-    "en": "English",
-    "es": "Spanish"
+  "a11y": {
+    "langSwitch": "Change language",
+    "menuToggle": "Open navigation menu"
   }
 }

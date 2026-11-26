@@ -1,0 +1,66 @@
+{
+  "slug": "kiwi-guingueta",
+  "siteDomain": "vilanovailageltru.info",
+  "name": "Kiwi Guingueta",
+  "legalName": "Kiwi Guingueta",
+  "schemaType": "BarOrPub",
+  "primaryType": "bar",
+  "street": "Passeig Voramar, 5",
+  "postalCode": "08800",
+  "city": "Vilanova i la Geltrú",
+  "region": "Barcelona",
+  "country": "ES",
+  "latitude": 41.2033767,
+  "longitude": 1.6846683,
+  "phoneNational": "620 18 72 58",
+  "phoneE164": "+34 620 18 72 58",
+  "phoneIsMobile": true,
+  "website": "",
+  "rating": 4.2,
+  "ratingCount": 336,
+  "plusCode": "8FH36M3M+9V",
+  "mapsPlaceUri": "https://maps.google.com/?cid=9357870784461133312",
+  "mapsReviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x12a38777b29d42bb:0x81ddd5e5f9cfd600!9m1!1b1",
+  "mapsDirectionsUri": "https://www.google.com/maps/dir/?api=1&destination=41.2033767,1.6846683&destination_place_id=ChIJu0KdsneHoxIRANbP-eXV3YE",
+  "servesCuisine": [],
+  "acceptsReservations": true,
+  "reviews": [
+    {
+      "author": "Richard Hill",
+      "text": "Great bar with good food, nice friendly staff. Sunbeds for hire at the bar giving you full access to a fantastic beach. The ideal place for a day by the sea.",
+      "rating": 5,
+      "relative": ""
+    },
+    {
+      "author": "Lluís Bertran",
+      "text": "Looking for a glass of wine, a cocktail or an aperitif on the beach? Here you have one of the best near to Barcelona in Vilanova i la Geltrú. The atmosphere is magnificent, the environment is great, the weather is almost sure good in summer season.",
+      "rating": 4,
+      "relative": ""
+    },
+    {
+      "author": "Isabella Dicaprio",
+      "text": "Great place for a quick bite, a drink and a swim.",
+      "rating": 4,
+      "relative": ""
+    },
+    {
+      "author": "Francine Howard",
+      "text": "Super friendly and welcoming, good food and nice drinks, lovely place on the beach.",
+      "rating": 5,
+      "relative": ""
+    }
+  ],
+  "heroPhoto": "",
+  "photoCredit": "",
+  "photoCreditUrl": "",
+  "manifestTheme": "#2b3a2e",
+  "manifestBackground": "#faf8f4",
+  "accent": "#2b3a2e",
+  "deep": "#1c2a20",
+  "gold": "#c9a227",
+  "light": "#9db9a4",
+  "redirects": {
+    "ca": "/"
+  },
+  "photoSelector": ".hero__art"
+}
