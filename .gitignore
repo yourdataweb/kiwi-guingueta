@@ -1,8 +1,9 @@
-node_modules/
+.DS_Store
 .env
 .env.local
+.idea/
+node_modules
+node_modules/
 *.pem
-.DS_Store
 Thumbs.db
 .vscode/
-.idea/
